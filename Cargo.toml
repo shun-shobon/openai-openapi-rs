@@ -8,6 +8,11 @@ edition = "2021"
 repository = "https://github.com/shun-shobon/openai-openapi-rs.git"
 homepage = "https://github.com/shun-shobon/openai-openapi-rs"
 
+[features]
+default = ["rustls-tls"]
+native-tls = ["reqwest/native-tls"]
+rustls-tls = ["reqwest/rustls-tls"]
+
 [dependencies]
 serde = "^1.0"
 serde_derive = "^1.0"
