@@ -1,11 +1,12 @@
 [package]
 name = "openai-openapi"
 version = "0.1.0"
-authors = ["OpenAPI Generator team and contributors"]
+authors = ["Shuntaro Nishizawa <shun.shobon@gmail.com> (https://s2n.tech)"]
 description = "APIs for sampling from and fine-tuning language models"
-# Override this license by providing a License Object in the OpenAPI.
-license = "Unlicense"
-edition = "2018"
+license = "MIT"
+edition = "2021"
+repository = "https://github.com/shun-shobon/openai-openapi-rs.git"
+homepage = "https://github.com/shun-shobon/openai-openapi-rs"
 
 [dependencies]
 serde = "^1.0"

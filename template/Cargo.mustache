@@ -1,35 +1,17 @@
 [package]
 name = "{{{packageName}}}"
 version = "{{#lambdaVersion}}{{{packageVersion}}}{{/lambdaVersion}}"
-{{#infoEmail}}
-authors = ["{{{.}}}"]
-{{/infoEmail}}
-{{^infoEmail}}
-authors = ["OpenAPI Generator team and contributors"]
-{{/infoEmail}}
+authors = ["Shuntaro Nishizawa <shun.shobon@gmail.com> (https://s2n.tech)"]
 {{#appDescription}}
 description = "{{{.}}}"
 {{/appDescription}}
-{{#licenseInfo}}
-license = "{{.}}"
-{{/licenseInfo}}
-{{^licenseInfo}}
-# Override this license by providing a License Object in the OpenAPI.
-license = "Unlicense"
-{{/licenseInfo}}
-edition = "2018"
-{{#publishRustRegistry}}
-publish = ["{{.}}"]
-{{/publishRustRegistry}}
-{{#repositoryUrl}}
-repository = "{{.}}"
-{{/repositoryUrl}}
+license = "MIT"
+edition = "2021"
+repository = "https://github.com/shun-shobon/openai-openapi-rs.git"
 {{#documentationUrl}}
 documentation = "{{.}}"
 {{/documentationUrl}}
-{{#homePageUrl}}
-homepage = "{{.}}
-{{/homePageUrl}}
+homepage = "https://github.com/shun-shobon/openai-openapi-rs"
 
 [dependencies]
 serde = "^1.0"
