@@ -1,3 +1,6 @@
+.PHONY: all
+all: generate clippy format
+
 .PHONY: generate
 generate:
 	openapi-generator generate \
@@ -7,3 +10,11 @@ generate:
 	-o . \
 	--skip-validate-spec \
 	--additional-properties packageName=openai-openapi,packageVersion=0.1.0
+
+.PHONY: clippy
+clippy:
+	cargo clippy --fix
+
+.PHONY: format
+format:
+	cargo fmt
