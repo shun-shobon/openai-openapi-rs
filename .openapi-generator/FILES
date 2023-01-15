@@ -1,5 +1,4 @@
 .gitignore
-.travis.yml
 Cargo.toml
 README.md
 docs/CreateAnswerRequest.md
@@ -49,7 +48,6 @@ docs/ListModelsResponse.md
 docs/Model.md
 docs/OpenAiApi.md
 docs/OpenAiFile.md
-git_push.sh
 src/apis/configuration.rs
 src/apis/mod.rs
 src/apis/open_ai_api.rs
