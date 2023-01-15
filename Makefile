@@ -13,7 +13,9 @@ generate:
 
 .PHONY: clippy
 clippy:
-	cargo clippy --fix
+	cargo clippy --fix --allow-dirty
+# HACK: You have to run it twice to get it all fixed.
+	cargo clippy --fix --allow-dirty
 
 .PHONY: format
 format:
